@@ -8,7 +8,8 @@ namespace Task3
 
         static void Main(string[] args)
         {
-           
+           //TODO: For longer variable names make sure to use camelcase. example totalAmtPaid
+           //TODO: Please comment out each piece of logic so I can see the program flow
             double totalamtpaid = 0.0;
             const double price = 0.10;
             double bottles = 0.0;
@@ -48,7 +49,7 @@ namespace Task3
     }
 
 
-
+    //TODO: Make sure you are formatting correctly
         }
 
 
