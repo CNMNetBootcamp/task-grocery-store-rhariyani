@@ -9,7 +9,7 @@ namespace Task3
         static void Main(string[] args)
         {
            
-            double totalamtpaid = 0.0;
+            double totalAmtpaid = 0.0;
             const double price = 0.10;
             double bottles = 0.0;
             double runingtotal = 0.0;
@@ -28,12 +28,14 @@ namespace Task3
             } while (weekly<7);
             {
 
-                runingtotal += bottles;
-                weeklytotal = bottles * 7;
+                runingtotal += bottles; // storing userinput value bottles to runingtotal
+
+                weeklytotal = bottles * 7;// weeklytotal shows total no of bottles into 7 to show 7days total of bottle collection
                 Console.WriteLine("The total of bottle is per week is:" + weeklytotal);
                 Console.ReadLine();
-                totalamtpaid = weeklytotal  * price;
-                Console.WriteLine("The total amt paid is:" + totalamtpaid);
+
+                totalAmtpaid = weeklytotal  * price;// this shows total bottles collect through week into price show amt paid for week 
+                Console.WriteLine("The total amt paid is:" + totalAmtpaid);
                 Console.ReadLine();
             }
             
