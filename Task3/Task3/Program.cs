@@ -32,8 +32,10 @@ namespace Task3
 
                 weeklytotal = bottles * 7;// weeklytotal shows total no of bottles into 7 to show 7days total of bottle collection
                 Console.WriteLine("The total of bottle is per week is:" + weeklytotal);
+                //TODO: Where is running total? 
                 Console.ReadLine();
-
+                //TODO: You need to add a writeline here
+                //TODO: You also need to display the week. 
                 totalAmtpaid = weeklytotal  * price;// this shows total bottles collect through week into price show amt paid for week 
                 Console.WriteLine("The total amt paid is:" + totalAmtpaid);
                 Console.ReadLine();
