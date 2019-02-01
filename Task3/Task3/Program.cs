@@ -1,61 +1,82 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace Task3
 {
-    class Program
+
+    class program
     {
-
-
         static void Main(string[] args)
         {
-           
+
             double totalAmtpaid = 0.0;
             const double price = 0.10;
             double bottles = 0.0;
-            double runingtotal = 0.0;
             int weekly = 0;
-            double weeklytotal = 0.0;
+            string question = "Y";
+            double totalbottles = 0.0;
+            int day = 0;
+            DateTime dob = new DateTime(2002, 10, 22);
+
+
+
+
             do
             {
 
-                Console.WriteLine("Please enter no of bottles receivied today:");
-                bottles = double.Parse(Console.ReadLine());
-                weekly++;
+                do
+                {
+                    Console.WriteLine("Please enter no of bottles receivied today:");
+                    bottles = double.Parse(Console.ReadLine());
+                    day = day + 1;
+                    Console.WriteLine("This is day " + day);
 
-                
-                   
 
-            } while (weekly<7);
-            {
+                    //DateTime emptyDateTime = new DateTime();
+                    Console.WriteLine("Day of Week:{0}", dob.DayOfWeek);
 
-                runingtotal += bottles; // storing userinput value bottles to runingtotal
-
-                weeklytotal = bottles * 7;// weeklytotal shows total no of bottles into 7 to show 7days total of bottle collection
-                Console.WriteLine("The total of bottle is per week is:" + weeklytotal);
-                Console.ReadLine();
-
-                totalAmtpaid = weeklytotal  * price;// this shows total bottles collect through week into price show amt paid for week 
-                Console.WriteLine("The total amt paid is:" + totalAmtpaid);
-                Console.ReadLine();
-            }
-            
-                
-                
+                    weekly++;
+                    totalbottles = totalbottles + bottles;
+                    Console.WriteLine("total no of bottles collected " + totalbottles);
 
 
 
-               
+
+                } while (weekly < 7);
+                {
+
+
+                    totalAmtpaid = totalbottles * price;// this shows total bottles collect through week into price show amt paid for week 
+                    Console.WriteLine("The total amt paid is:" + totalAmtpaid);
+                    Console.ReadLine();
+                }
+
+                Console.WriteLine("Would you like to continue? (Y/N)");
+                question = Console.ReadLine();
+            } while (question == "Y");
+
+
+
 
         }
+
     }
+}
+
+
+
+
+
+
+
 
 
     //TODO: Make sure you are formatting correctly
-        }
 
 
 
-    
+
 
 
 
