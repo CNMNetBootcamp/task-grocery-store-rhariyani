@@ -27,6 +27,7 @@ namespace Task3
 
                 do
                 {
+                    // Program throws an exception when I run it. Please fix this. 
                     Console.WriteLine("Please enter no of bottles receivied today:");
                     bottles = double.Parse(Console.ReadLine());
                     day = day + 1;
