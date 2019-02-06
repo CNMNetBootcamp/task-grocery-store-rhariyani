@@ -9,7 +9,7 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-
+            //Good
             double totalAmtpaid = 0.0;
             const double price = 0.10;
             double bottles = 0.0;
